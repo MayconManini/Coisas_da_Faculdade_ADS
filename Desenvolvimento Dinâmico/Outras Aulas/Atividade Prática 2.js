@@ -23,4 +23,4 @@ switch(pedido){
 console.log('Muito Obrigado, Volte Sempre!');
     /* Não entendi bem como solicitar respostas no console ainda,
     estou mais familiarizado com java e C#, o js ainda é novo para mim. 
-    Se tiver desconfigurado, favor ver em: */
+    Se tiver desconfigurado, favor ver em: https://github.com/MayconManini/Coisas_da_Faculdade_ADS/blob/963d2f7dbfc2dfe204a3cdac31d5b2f70c27021c/Desenvolvimento%20Din%C3%A2mico/Outras%20Aulas/Atividade%20Pr%C3%A1tica%202.js */
