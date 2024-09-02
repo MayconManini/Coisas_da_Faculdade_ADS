@@ -59,7 +59,7 @@ G1.gerenciar()
             }
     }
 //A partir daqui, testar em casa... Caso de errado, é daqui pra frente
-    function enviar(){
+    function submit(){
         var recebido_1 = new Funcionario(
             this.nome = document.getElementsByName('nome')[0].value,
             this.sobrenome = document.getElementsByName('sobrenome')[0].value,
