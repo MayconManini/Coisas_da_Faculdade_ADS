@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade Prática 4</title>    
+    <style>
+        h2{
+            color: darkolivegreen;
+        }
+        #outraLangP{
+            display: none;
+        }
+        #outraLangR{
+            display: none;
+        }
+        legend{
+            font-size: large;
+            font-weight: bold;
+        }
+        button{
+            background-color: lightgrey;
+            color: rgb(255, 0, 0);
+            font-size: large;
+            font-weight: bold;
+        }
+    </style>
+    <script src="Atividade Prática 4.js">
+    </script>
+</head>
+<body>
+    <h2>Atividade Prática 4</h2>
+        <section>
+            <form action="" method="get">
+                <fieldset id="DadosPessoais" style="background-color:  #dca8f7;"> 
+                    <legend id="cabeçalho"><br>Dados Pessoais</legend> 
+                    <label for="nome">Nome:</label><br>
+                        <input required type="text" name="nome"> <br> <br>
+                    <label for="sobrenome">Sobrenome:</label><br>
+                        <input required type="text" name="sobrenome"> <br> <br>
+                    <label for="cargo">Cargo:</label><br>
+                        <input required type="text" name="cargo"> <br> <br>
+                    <label for="idade">Idade:</label><br>
+                            <input required type="number" name="idade"> <br> <br>
+                    <label for="departamento">Departamento:</label><br>
+                        <input required type="text" name="departamento"> <br> <br>
+                    <label for="lang">Linguagem de Programação:</label><br>
+                        <select id="lang" name="lang" onchange="mudando()">
+                            <option value="nenhuma">Nenhuma</option>
+                            <option value="c">C</option>
+                            <option value="cpp">C++</option>
+                            <option value="csharp">C#</option>
+                            <option value="elixir">Elixir</option>
+                            <option value="golang">GO</option>
+                            <option value="java">Java</option>
+                            <option value="javascript">JavaScript</option>
+                            <option value="lua">Lua</option>
+                            <option value="php">PHP</option>
+                            <option value="python">Python</option>
+                            <option value="ruby">Ruby</option>
+                            <option value="rust">Rust</option>
+                            <option value="typescript">TypeScript</option>
+                            <option value="Outra">Outra</option>
+                        </select>
+                        <label id="outraLangP"><br>Qual?...</label>
+                        <input type="text" id="outraLangR">
+                        <br>
+                </fieldset>
+                         <br><button type="submit" onclick="enviar()">Enviar</button>             
+            </form>
+        </section>
+</body>
+</html>

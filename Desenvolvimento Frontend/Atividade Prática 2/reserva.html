@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Companhia de Viagens</title>    
+</head>
+<body>
+    <h2>Atividade Prática 2</h2>
+        <section>
+            <form action="" method="get">
+                <fieldset> 
+                    <legend>Dados Pessoais</legend> 
+                    <label for="nome">Nome:</label><br>
+                        <input required type="text" name="nome"> <br> <br>
+                    <label for="email">E-mail:</label><br>
+                        <input required type="email" name="email"> <br> <br>
+                </fieldset>
+                <fieldset>
+                    <legend>Serviços Desejados</legend>
+                    <label for="servicosDesejados"></label><br>
+                        <input type="checkbox" name="servicosDesejados" value="compraPassagens"> Compra de Passagens <br><br>
+                        <input type="checkbox" name="servicosDesejados" value="reservaHotel"> Reserva de Hospedagem <br><br>
+                        <input type="checkbox" name="servicosDesejados" value="aluguelVeiculo"> Aluguel de Veículos <br><br>
+                        <input type="checkbox" name="servicosDesejados" value="seguroViagem"> Seguro Viagem <br><br>                
+                </fieldset>
+                <fieldset>
+                    <legend>Forma de Pagamento</legend>
+                        <label for="formaPagamento">
+                            <input required type="radio" name="formaPagamento" value="pix"> Pix <br>
+                            <input type="radio" name="formaPagamento" value="credito"> Cartão de Crédito <br>
+                            <input type="radio" name="formaPagamento" value="debito"> Cartão de Débito <br>
+                            <input type="radio" name="formaPagamento" value="boleto"> Boleto Bancário <br>
+                        </label>
+                    <label for="prazoPagamento"></label><br>
+                        <select required id="prazoPagamento" name="prazoPagamento">
+                            <option value="avista">À vista</option>
+                            <option value="2x">2x (sem juros)</option>
+                            <option value="3x">3x (sem juros)</option>
+                            <option value="4x">4x (sem juros)</option>
+                            <option value="5x">5x (sem juros)</option>
+                            <option value="6x">6x (sem juros)</option>
+                            <option value="7x">7x (com juros)</option>
+                            <option value="8x">8x (com juros)</option>
+                            <option value="9x">9x (com juros)</option>
+                            <option value="10x">10x (com juros)</option>
+                            <option value="11x">11x (com juros)</option>
+                            <option value="12x">12x (com juros)</option>
+                        </select>
+                        <br>
+                </fieldset>
+                <fieldset>
+                    <legend>Comentários</legend>
+                        <label for="comentarios">
+                            <textarea name="comentarios" rows="5"></textarea>
+                        </label>
+                </fieldset>   
+                        <br><button type="submit">Enviar Pedido</button>             
+            </form>
+        </section>
+</body>
+</html>

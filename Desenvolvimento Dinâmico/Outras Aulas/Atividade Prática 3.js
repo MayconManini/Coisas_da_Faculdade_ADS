@@ -38,5 +38,9 @@ class Desenvolvedor extends Funcionario{
     }
 }
 
-const teste = new Desenvolvedor("Jorge", "Amaro", 45, "C#")
-teste.programar()
+const D1 = new Desenvolvedor("Jorge", "Amaro", 45, "C#")
+D1.programar()
+
+
+const G1 = new Gerente("Celso", "Portioli", 57, "Geral")
+G1.gerenciar()
